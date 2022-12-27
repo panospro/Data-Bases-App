@@ -3,16 +3,25 @@
 <html>
   <head>
     <title>Animal Shelter</title>
+    <style>
+      /* Add some styles for the different sections */
+      section {
+        display: none; /* Hide all sections by default */
+      }
+      section#about {
+        display: block; /* Show the About section on the home page */
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Animal Shelter</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#adopt">Adopt</a></li>
-          <li><a href="#volunteer">Volunteer</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="showSection('about')">Home Page</a></li>
+          <li><a href="#" onclick="showSection('adopt')">Adopt</a></li>
+          <li><a href="#" onclick="showSection('volunteer')">Volunteer</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -24,7 +33,9 @@
       </section>
       <section id="adopt">
         <h2>Adopt a Pet</h2>
-        <p>Welcome to our adoptable animals page! Here you will find a selection of lovable and affectionate pets who are looking for their forever homes. If you see a pet that you're interested in, please visit them at our shelter or contact us to learn more and schedule a meet and greet. Thank you for considering adoption and for giving one of our animals the loving home they deserve!</p>
+        <p>Welcome to our adoptable animals page! Here you will find a selection of lovable and affectionate pets who are looking 
+          for their forever homes. If you see a pet that you're interested in, please visit them at our shelter or contact us to learn 
+          more and schedule a meet and greet. Thank you for considering adoption and for giving one of our animals the loving home they deserve!</p>
         <ul>
           <li>
             <h3>Max and Jack</h3>
@@ -47,6 +58,16 @@
       <section id="contact">
         <h2>Contact Us</h2>
         <p>Have a question or want to get involved? Contact us using the form below or visit us at the shelter.</p>
+        <header>
+          <h1>Social Media</h1>
+          <nav>
+            <ul>
+              <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+              <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+              <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            </ul>
+          </nav>
+        </header>
         <form>
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name"><br>
@@ -58,8 +79,20 @@
         </form> 
       </section>
     </main>
-    <footer>
-      <p>Copyright 2021 Animal Shelter</p>
-    </footer>
+    
+    <!-- Script to show and hide the different sections -->
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+          section.style.display = 'none';
+        });
+        // Show the selected section
+        const section = document.querySelector(`section#${sectionId}`);
+        section.style.display = 'block';
+      }
+    </script>
   </body>
 </html>
+ 
