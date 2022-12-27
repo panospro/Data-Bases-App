@@ -51,14 +51,85 @@
         </ul>
       </section>
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Volunteer -->
       <section id="volunteer">
         <h2>Volunteer</h2>
-        <p>Join our team of dedicated volunteers and make a difference in the lives of our animals. We have a variety of opportunities available, including socializing with the animals, cleaning cages, and helping with events.</p>
+        <p>Join our team of dedicated volunteers and make a difference in the lives of our animals. We have a variety of opportunities available, including socializing with the animals, cleaning cages, grooming pets, and helping with events such as adoption days and fundraising events. </p>
+         <p> Our volunteers typically commit to a minimum of 2 hours per week, but we welcome volunteers who are able to commit to more time. To get started, please fill out our online application form or contact us to learn more about volunteering opportunities. Thank you for considering supporting our mission as a volunteer!</p>
+        <h3>Upcoming Volunteer Events</h3>
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>February 5</td>
+            <td>Adoption Event</td>
+            <td>Thessaloniki</td>
+          </tr>
+          <tr>
+            <td>February 23</td>
+            <td>Fundraising Event</td>
+            <td>Our Shelter</td>
+          </tr>
+          <tr>
+            <td>March 3</td>
+            <td>Adoption Event</td>
+            <td>Thessaloniki</td>
+          </tr>
+          <tr>
+            <td>March 20</td>
+            <td>Fundraising Event</td>
+            <td>Our Shelter</td>
+          </tr>
+        </table>
+      
+        <h3>Why Volunteer at Our Shelter?</h3>
+        <ul>
+          <li>Make a difference in the lives of animals</li>
+          <li>Gain valuable skills and experience</li>
+          <li>Meet new people and make new friends</li>
+          <li>Feel a sense of accomplishment and satisfaction</li>
+        </ul>
+      
+        <h3>Current Volunteer Testimonials</h3>
+        <blockquote>
+          "I have been volunteering at the animal shelter for the past year, and it has been such a rewarding experience. I love being able to help the animals and see them find their forever homes. The staff and other volunteers are so friendly and supportive, and I have made some great friends through volunteering at the shelter. I highly recommend volunteering here to anyone who loves animals and wants to make a difference."
+        </blockquote>
+        <blockquote>
+          "I started volunteering at the animal shelter because I wanted to do something meaningful with my time. It has been an amazing experience, and I have learned so much about caring for animals. The staff and other volunteers are all so dedicated and passionate, and it's contagious! I feel grateful to be able to contribute in a small way to the important work they do."
+        </blockquote>
+        <h3>Apply for volunteer</h3>
+        <p>If you want to become a volunteer, apply <a href="#" onclick="showSection('contact')">here</a>.</p>
       </section>
+      
+
+
+
+
+
+
+
+      <!-- Contact -->
       <section id="contact">
         <h2>Contact Us</h2>
         <p>Have a question or want to get involved? Contact us using the form below or visit us at the shelter.</p>
-        <header>
+        <!-- <header>
           <h1>Social Media</h1>
           <nav>
             <ul>
@@ -67,15 +138,25 @@
               <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
             </ul>
           </nav>
-        </header>
-        <form>
+        </header> -->
+        <form id="volunteer-application-form" method="post" action="/submit-application">
+          <h2>Volunteer Application Form</h2>
+          <p>Thank you for your interest in volunteering at our animal shelter! Please fill out the form below to apply to become a volunteer. All fields are required.</p>
           <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name"><br>
+          <input type="text" id="name" name="name" required><br>
           <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email"><br>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message"></textarea><br>
-          <input type="submit" value="Submit">
+          <input type="email" id="email" name="email" required><br>
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone" required><br>
+          <label for="age">Age:</label><br>
+          <input type="number" id="age" name="age" required><br>
+          <label for="availability">Availability:</label><br>
+          <textarea id="availability" name="availability" rows="5" required></textarea><br>
+          <label for="experience">Experience with animals:</label><br>
+          <textarea id="experience" name="experience" rows="5" required></textarea><br>
+          <label for="interests">Interests and skills:</label><br>
+          <textarea id="interests" name="interests" rows="5" required></textarea><br>
+          <input type="submit" value="Submit Application">
         </form> 
       </section>
     </main>
