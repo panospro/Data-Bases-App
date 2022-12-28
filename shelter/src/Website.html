@@ -19,9 +19,12 @@
       <nav>
         <ul>
           <li><a href="#" onclick="showSection('about')">Home Page</a></li>
-          <li><a href="#" onclick="showSection('adopt')">Adopt</a></li>
+          <li><a href="#" onclick="showSection('adopt')">Adopt</a></li>     
+          <li><a href="#" onclick="showSection('foundlost')">Lost and Found Pets</a></li>
           <li><a href="#" onclick="showSection('volunteer')">Volunteer</a></li>
+          <li><a href="#" onclick="showSection('donate')">Donate</a></li>
           <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
@@ -137,42 +140,116 @@
       <!-- Contact -->
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>Have a question or want to get involved? Contact us using the form below or visit us at the shelter.</p>
-        <!-- <header>
-          <h1>Social Media</h1>
-          <nav>
-            <ul>
-              <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-              <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
-              <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-            </ul>
-          </nav>
-        </header> -->
-        <h2>Application for Volunteering</h2>
-        <form id="volunteer-application-form" method="post" action="/submit-application">
-          <h2>Volunteer Application Form</h2>
-          <p>Thank you for your interest in volunteering at our animal shelter! Please fill out the form below to apply to become a volunteer. All fields are required.</p>
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
+        <p>Have a question or want to get involved?</p>
+        <p>Contact us at:</p>
+        <ul>
+          <li>Phone: 2310-156-156</li>
+          <li>Email: animalshelterthes@gmail.com</li>
+        </ul>
 
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" placeholder="jack@gmail.com" required><br>
+        <p>Visit us at:</p>
+        <address>
+          Egnatia Street 140<br>
+          Thessaloniki, Greece
+        </address>
+        <p><h4>Hours of operation: Monday-Friday 9am-5pm</p></h4>
 
-          <label for="phone">Phone:</label><br>
-          <input type="tel" id="phone" name="phone" placeholder="6948876545" required><br>
 
-          <label for="availability">Availability:</label><br>
-          <textarea id="availability" name="availability" rows="5" placeholder="Available on Tuesdays and Mondays at 8am." required></textarea><br>
+        <h3>Frequently Asked Questions:</h3>
 
-          <label for="experience">Experience with animals:</label><br>
-          <textarea id="experience" name="experience" rows="5" placeholder="I own a dog for 8 years and i take good care of him." required></textarea><br>
+        <h4><button onclick="showSection2('section1')">1</button> How can I adopt a pet from your shelter?</h4>
+        <section id="section1" style="display: none">
+          <div>
+            <p>To adopt a pet from our shelter, you will need to fill out an adoption application and meet with one of our adoption counselors. For more information, please visit our <a href="#" onclick="showSection('adopt')">adoption page</a>.</p>
+          </div>
+        </section>
 
-          <label for="interests">Interests and skills:</label><br>
-          <textarea id="interests" name="interests" rows="5" placeholder="I am good at grooming dogs." required></textarea><br>
-          <input type="submit" value="Submit Application">
-        </form> 
+        <h4><button onclick="showSection2('section2')">2</button> Do you accept donations?</h4>
+        <section id="section2" style="display: none">
+          <div>
+            <p>Yes, we greatly appreciate donations to help us care for the animals at our shelter. You can make a donation online through our <a href="#" onclick="showSection('donate')">donation page</a>, or you can drop off donations at the shelter during our hours of operation.</p>
+          </div>
+        </section>
+
+
+        <h4><button onclick="showSection2('section3')">3</button> What types of animals do you have available for adoption?</h4>
+        <section id="section3" style="display: none">
+          <div>
+            <p>At this very moment we only have dogs available for adoption, in the future we will try to include cats, rabbits, and small mammals such as guinea pigs and hamsters. We may also inlcude reptiles and birds. Please check our <a href="#" onclick="showSection('adopt')">adoption page</a> for a current list of available animals.</p>
+          </div>
+        </section>
+
+        <h4><button onclick="showSection2('section4')">4</button> I lost my pet. How can I find out if it's at your shelter?</h4>
+        <section id="section4" style="display: none">
+          <div>
+            <p>If you have lost your pet, we recommend checking our <a href="#" onclick="showSection('foundlost')">lost and found page</a> to see if it has been brought to our shelter. You can also call us at 2310-156-156 to ask if your pet has been found and brought to the shelter. We recommend visiting the shelter in person to look for your pet as well.</p>
+          </div>
+        </section>
+
+
+        <h4><button onclick="showSection2('section5')">5</button> I'm interested in volunteering at your shelter. How do I get started?</h4>
+        <section id="section5" style="display: none">
+          <div>
+            <p>We are always in need of volunteers to help care for the animals at our shelter. To get started, please visit our <a href="#" onclick="showSection('volunteer')">volunteering page</a> and view the details of volunteering, then fill out the volunteer application, located in the bottom of this page. We will then contact you to schedule an orientation and training session.</p></div>
+          <div>
+            
+        </section>
+
+        <h4><button onclick="showSection2('section6')">6</button> Do you offer low-cost or free spay/neuter services?</h4>
+        <section id="section6" style="display: none">
+          <div>
+            <p>Yes, we offer low-cost spay/neuter services to the public to help reduce pet overpopulation. For more information on pricing and how to schedule an appointment, you call, email, direct message us in our social media .</p>
+          </div>
       </section>
-    </main>
+
+        <h4><button onclick="showSection2('section7')">7</button> Do you have a waiting list for adoptions?</h4>
+        <section id="section7" style="display: none">
+          <div>
+            <p>We do not have a waiting list for adoptions, but the availability of specific animals can vary. We recommend checking our <a href="#" onclick="showSection('adopt')">adoption page</a> regularly or calling the shelter at 2310-156-156 to inquire about specific animals you are interested in adopting.</p>
+          </div>
+      </section>
+      
+      <h2>Application for Volunteering</h2>
+      <form id="volunteer-application-form" method="post" action="/submit-application">
+        <h2>Volunteer Application Form</h2>
+        <p>Thank you for your interest in volunteering at our animal shelter! Please fill out the form below to apply to become a volunteer. All fields are required.</p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="jack@gmail.com" required><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="6948876545" required><br>
+
+        <label for="availability">Availability:</label><br>
+        <textarea id="availability" name="availability" rows="5" placeholder="Available on Tuesdays and Mondays at 8am." required></textarea><br>
+
+        <label for="experience">Experience with animals:</label><br>
+        <textarea id="experience" name="experience" rows="5" placeholder="I own a dog for 8 years and i take good care of him." required></textarea><br>
+
+        <label for="interests">Interests and skills:</label><br>
+        <textarea id="interests" name="interests" rows="5" placeholder="I am good at grooming dogs." required></textarea><br>
+        <input type="submit" value="Submit Application">
+      </form> 
+
+
+
+    </section>
+    
+
+    <footer>
+      <p>Animal Shelter</p>
+      <div class="social-media">
+        <!-- Add links to your social media pages -->
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+
+  </main>
     
     <!-- Script to show and hide the different sections -->
     <script>
@@ -186,6 +263,33 @@
         const section = document.querySelector(`section#${sectionId}`);
         section.style.display = 'block';
       }
+    </script>
+
+    <script>
+      function showSection2(sectionId) {
+        // Select the section element with the specified ID
+        const section = document.querySelector(`#${sectionId}`);
+
+        // Toggle the display property of the element to show or hide it
+        if (section.style.display === 'none') {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      }
+    </script>
+
+    <script>
+      window.addEventListener('scroll', function() {
+      // Check if the user has scrolled to the bottom of the page
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        // Add the "show-footer" class to the body element
+        document.body.classList.add('show-footer');
+      } else {
+        // Remove the "show-footer" class from the body element
+        document.body.classList.remove('show-footer');
+      }
+    });    
     </script>
   </body>
 </html>

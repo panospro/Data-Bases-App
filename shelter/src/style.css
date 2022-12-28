@@ -15,15 +15,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 2em;
-  /* text-align: left; */
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* text-align: right;
-  font-size: 40px; */
 }
 
 nav li {
@@ -42,7 +39,7 @@ nav a:hover {
 
 main {
   max-width: 900px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -53,12 +50,6 @@ main h2 {
   margin-top: 0;
   text-align: center;
 }
-
-/* main h3 {
-
-  margin-top: 0;
-  text-align: center;
-} */
 
 form label {
   display: block;
@@ -80,21 +71,14 @@ form textarea {
 
 
 form input[type="radio"] {
-  display: inline-block; /* ? */
+  display: inline-block; 
   margin-right: 5px;
   text-align: center;
 }
 
-footer {
-  text-align: center;
-  font-size: 0.8em;
-  color: #666;
-  margin-top: 20px;
-}
-
 select {
-  display: block;  /* make the select element a block-level element */
-  margin: 0 auto;  /* center the element horizontally */
+  display: block;  
+  margin: 0 auto;  
 }
 
 
@@ -105,11 +89,6 @@ main img {
   height: 300px;
 }
 
-
-
-
-
-/* Add some styles for the different sections */
 section {
   display: none; /* Hide all sections by default */
 }
@@ -117,7 +96,6 @@ section#about {
   display: block; /* Show the About section on the home page */
 }
 
-/* Add some styles for the table of upcoming volunteer events */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -132,15 +110,14 @@ th {
   color: white;
 }
 
-/* Add some styles for the social media icons */
+
 img {
   width: 32px;
   height: 32px;
 }
 
 
-
-/* Add some basic styles for the form */
+/* Add styles for the form */
 form {
   width: 500px;
   margin: 0 auto;
@@ -185,4 +162,38 @@ input[type="submit"]:hover {
   background-color: #0052cc;
 }
 
+.hidden {
+  display: none;
+}
 
+button {
+  background-color: #374d65; 
+  border: none; 
+  color: white; 
+  padding: 2px 7px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 15px;
+  border-radius: 100px; 
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: #4f49b8; 
+}
+
+footer {
+  position: fixed; 
+  left: 0;
+  bottom: -60px; 
+  width: 100%; 
+  background-color: #333;
+  color: white;
+  transition: bottom 0.5s ease-in-out; 
+}
+
+/* When the user scrolls to the bottom of the page, show the footer */
+body.show-footer footer {
+  bottom: 0;
+}
