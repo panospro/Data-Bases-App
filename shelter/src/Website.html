@@ -29,11 +29,30 @@
       </nav>
     </header>
     <main>
+      <!-- Home Page -->
       <section id="about">
-        <h2>About Us</h2>
-        <p>Our animal shelter is dedicated to rescuing and rehoming abandoned and homeless pets. We provide a safe and loving environment for them until they find their forever homes. Our shelter is run by a team of passionate and dedicated staff and volunteers who work tirelessly to care for the animals and find them loving homes. We also offer a range of services to the community, including adoptions, spay/neuter surgeries, and microchipping.</p>
+        <h2>Welcome to Our Animal Shelter!</h2>
+        
+        <p>Our animal shelter was founded just a few short years ago by a group of compassionate animal lovers who saw the need for a safe and loving home for abandoned and homeless pets in our community. We started small, with a handful of dedicated volunteers and a single building to house and care for a few dozen animals. But from the very beginning, we were driven by our deep commitment to improving the lives of animals and promoting the human-animal bond.</p>
+        <p>As word of our mission and dedication spread, we began to grow. More and more people joined our team of volunteers, and we were able to expand our services and reach to help more animals in need. We added new buildings and programs, and our small shelter began to make a big impact.</p>
+
+        <p>Today, we are proud to be a thriving and vital part of the community, providing care and support to hundreds of animals and their families each year. We are always looking for new ways to make a difference and to reach even more animals in need. We are grateful for the support of our donors, volunteers, and community partners, who make our work possible and help us to move forward in our mission.</p>
+        <img src="shelter-logo.png" alt="Shelter Logo" style="display: block; margin: 0 auto; width: 500px; height: 500px">
+        <p>At our animal shelter, we are dedicated to rescuing and rehoming abandoned and homeless pets. We provide a safe and loving environment for them until they find their forever homes.</p>
+        <p>Our team of passionate and dedicated staff and volunteers work tirelessly to care for the animals and find them loving homes. We also offer a range of services to the community, including adoptions, spay/neuter surgeries, and microchipping.</p>
         <p>We believe that every animal deserves a chance at a happy and healthy life, and we are committed to making a difference in the lives of as many animals as possible. We hope you will consider supporting us in our mission by adopting, volunteering, or donating to our shelter. Thank you for your support!</p>
+        <div style="text-align: center">
+          
+          <a href="#" onclick="showSection('adopt')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Adoptions</a>
+          <a href="#" onclick="showSection('volunteer')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Volunteering</a>
+          <a href="#" onclick="showSection('donate')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Donating</a>
+        </div>
       </section>
+
+
+
+
+
       <section id="adopt">
         <h2>Adopt a Pet</h2>
         <p>Welcome to our adoptable animals page! Here you will find a selection of lovable and affectionate pets who are looking 
@@ -208,8 +227,11 @@
             <p>We do not have a waiting list for adoptions, but the availability of specific animals can vary. We recommend checking our <a href="#" onclick="showSection('adopt')">adoption page</a> regularly or calling the shelter at 2310-156-156 to inquire about specific animals you are interested in adopting.</p>
           </div>
       </section>
-      
-      <h2>Application for Volunteering</h2>
+      <hr>
+      <h1>Volunteering Form</h1>
+      <div>
+        <p>Thank you for visiting our volunteering page and considering making a contribution to our organization. Your support is greatly appreciated and will help us make a difference in the lives of those in need. Please use the form below to make an application.</p>
+      </div>
       <form id="volunteer-application-form" method="post" action="/submit-application">
         <h2>Volunteer Application Form</h2>
         <p>Thank you for your interest in volunteering at our animal shelter! Please fill out the form below to apply to become a volunteer. All fields are required.</p>
@@ -232,15 +254,45 @@
         <textarea id="interests" name="interests" rows="5" placeholder="I am good at grooming dogs." required></textarea><br>
         <input type="submit" value="Submit Application">
       </form> 
-
-
-
     </section>
     
+    <!-- Donate -->
+    <section id="donate">
+      <h2>Welcome to our Donation Page!</h2>
+      <h1>Thank You for Your Support!</h1>
+      <p>We are so grateful for your generosity and kindness in supporting our organization. Your donation will make a huge difference in the lives of those in need, and we cannot thank you enough. Your support is truly appreciated and will go a long way in helping us achieve our mission. Thank you again for your support!</p>
+      <head>
+        <title>Donation Form</title>
+      </head>
+      <body>
+        <h1>Donation Form</h1>
+        <p>Thank you for considering making a donation to our organization. Please fill out the form below to make a donation using a credit card or PayPal.</p>
+        <form id="donation-form" method="post" action="/process-donation">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
+    
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="jack@gmail.com" required><br>
+    
+          <label for="amount">Donation Amount:</label><br>
+          <input type="number" id="amount" name="amount" min="1" placeholder="Enter the amount you would like to donate" required><br>
+    
+          <label for="payment-method">Payment Method:</label><br>
+          <label for="credit-card">Credit Card</label><br>
+          <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+          <label for="paypal">PayPal</label><br>
+          <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+          <input type="submit" value="Make Donation">
+        </form>
+      </body>
+    </section>
 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <footer>
-      <p>Animal Shelter</p>
-      <div class="social-media">
+      <p>Thanks for visiting our website! We hope you'll come back soon to see what's new. Please visit our social media &#x2764; </p>
+      <div class="social-media" style="text-align: center;">
         <!-- Add links to your social media pages -->
         <a href="#"><i class="fab fa-facebook-square"></i></a>
         <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -249,6 +301,7 @@
     </footer>
 
 
+    
   </main>
     
     <!-- Script to show and hide the different sections -->
@@ -279,6 +332,7 @@
       }
     </script>
 
+    <!-- Script that makes the footer appear, when someone scrolls all down the page -->
     <script>
       window.addEventListener('scroll', function() {
       // Check if the user has scrolled to the bottom of the page
@@ -291,6 +345,50 @@
       }
     });    
     </script>
+
+    <!-- Script for the volunteer-application-form submit button -->
+    <script>
+      const form = document.getElementById('volunteer-application-form');
+      const submitButton = form.querySelector('input[type="submit"]');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Change the button text and style
+        submitButton.value = 'Application submitted';
+        submitButton.style.backgroundColor = 'green';
+        submitButton.style.color = 'white';
+        form.reset(); // Clear the form
+        
+        setTimeout(() => {
+          submitButton.value = 'Submit Application';
+          submitButton.style.backgroundColor = '';
+          submitButton.style.color = '';
+        }, 5000);});
+    </script>
+
+    <!-- Script for the donation-form donate button -->
+    <script>
+      const form2 = document.getElementById('donation-form');
+      const submitButton2 = form2.querySelector('input[type="submit"]');
+
+      form2.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Change the button text and style
+        submitButton2.value = 'Donation made!!! Thank you for your contribution!!!';
+        submitButton2.style.backgroundColor = 'green';
+        submitButton2.style.color = 'white';
+        form2.reset(); // Clear the form
+        
+        setTimeout(() => {
+          submitButton2.value = 'Make Donation';
+          submitButton2.style.backgroundColor = '';
+          submitButton2.style.color = '';
+        }, 5000);});
+    </script>
+
+
   </body>
 </html>
  

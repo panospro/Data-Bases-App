@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   color: #333;
   background-color: #f5f5f5;
+  padding-bottom: 100px;
 }
 
 header {
@@ -183,17 +184,53 @@ button:hover {
   background-color: #4f49b8; 
 }
 
-footer {
-  position: fixed; 
-  left: 0;
-  bottom: -60px; 
-  width: 100%; 
-  background-color: #333;
-  color: white;
-  transition: bottom 0.5s ease-in-out; 
-}
+
 
 /* When the user scrolls to the bottom of the page, show the footer */
 body.show-footer footer {
   bottom: 0;
+}
+
+footer {
+  position: fixed; 
+  left: 0;
+  bottom: -130px; 
+  width: 100%; 
+  background-color: #333;
+  color: white;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+footer p {
+  position: absolute; 
+  left: 10;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  margin-right: 30px;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media i {
+  font-size: 40px;
+  color: white;
+}
+
+.social-media i:hover {
+  color: #ccc;
 }
