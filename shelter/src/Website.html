@@ -81,8 +81,11 @@
         <div class="dog-photos">
           <img src="dog1.png" alt="Meet Max and Jack are friendly and playful 2-month-old Labrador Retrievers. They love going for walks and playing fetch. These pups are looking for a family who can give them the attention and exercise they need to thrive. Could your family be the one they've been waiting for?" onclick="expandImage(this)">
           <img src="dog2.png" alt="Buddy is a lovable and energetic 1-year-old German Shepherd. He loves playing fetch and cuddling with you. Buddy would make a great companion for an active family who can provide him with plenty of mental and physical stimulation. Could that be you?" onclick="expandImage(this)">
-          <img src="dog3.jpg" alt="Dog 3" onclick="expandImage(this)">
-          <!-- Add more photos here -->
+          <img src="dog3.png" alt="Meet Rocky, a friendly and playful 2-month-old Boxer. Rocky loves playing with toys and going for walks. This energetic pup is looking for a family who can give him the exercise and attention he needs to thrive. Could your family be the one he's been waiting for? " onclick="expandImage(this)">
+          <img src="dog4.png" alt="Meet Max, a friendly and playful 3-month-old Labrador Retriever. Max loves going for walks and playing fetch. This adorable pup is looking for a family who can give him the attention and exercise he needs to thrive. Could your family be the one he's been waiting for?" onclick="expandImage(this)">
+          <img src="dog5.png" alt="Meet Charlie, a friendly and playful 3-month-old Siberian Husky. Charlie loves going for walks and playing fetch. This cute pup is looking for a family who can give her the attention and exercise she needs to thrive. Could your family be the one she's been waiting for?" onclick="expandImage(this)">
+          <img src="dog6.png" alt="Meet Casey, a friendly and playful 1-month-old Chihuahua. Casey loves snuggling and playing with toys. This adorable pup is looking for a family who can give her the love and attention she needs to thrive. Could your family be the one she's been waiting for?" onclick="expandImage(this)">
+          <img src="dog7.png" alt="Meet Koda, a friendly and playful 2-month-old Akita. Koda loves exploring and playing with toys. This energetic pup is looking for a family who can give her the exercise and attention she needs to thrive. Could your family be the one she's been waiting for? " onclick="expandImage(this)">  
         </div>
 
         <!-- Modal -->
@@ -95,7 +98,7 @@
 
         <!-- Contact Us -->
         <h3>Apply for adoption!</h3>
-        <p>If you want to become a volunteer, apply <a href="#" onclick="showSection('contact')">here</a>.</p>
+        <p>If you want to adopt one or more of our dogs, you can contact us at <a href="#" onclick="showSection('contact')">here</a>.</p>
       </section>
 
 
@@ -339,12 +342,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <footer>
-      <p>Thanks for visiting our website! We hope you'll come back soon to see what's new. Please visit our social media &#x2764; </p>
-      <div class="social-media" style="text-align: center;">
-        <!-- Add links to your social media pages -->
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="footer-container">
+        <p>Thanks for visiting our website! We hope you'll come back soon to see what's new. Please visit our social media &#x2764; </p>
+        <div class="social-media" style="text-align: center;">
+          <!-- Add links to your social media pages -->
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
 
@@ -362,6 +367,42 @@
      <section id="foundlost">
       <h2>Lost and Found Pets</h2>
 
+      <body>
+        <h1>Lost and Found Pets</h1>
+        <p>Welcome to our lost and found pets page. If have lost your pet, please use the form below to report it missing. If you have found a pet, please use the form below to report it. We will do our best to help reunite lost pets with their families as quickly as possible. Thank you for your help!</p>
+        <hr>
+        <h2>Lost Pet Form</h2>
+        <form id="lost-pet-form" method="post" action="/submit-lost-pet">
+          <label for="lost-name">Pet Name:</label><br>
+          <input type="text" id="lost-name" name="lost-name" placeholder="Jack" ><br>
+          <label for="lost-breed">Pet Breed:</label><br>
+          <input type="text" id="lost-breed" name="lost-breed" placeholder="Chihuahua" required><br>
+          <label for="lost-description">Pet Description:</label><br>
+          <textarea id="lost-description" name="lost-description" placeholder="My dog is orange and about 0.5 meters tall." required></textarea><br>
+          <label for="lost-location">Last Known Location:</label><br>
+          <input type="text" id="lost-location" name="lost-location" placeholder="Last time seen in Egnatia St." required><br>
+          <label for="lost-phone">Phone Number:</label><br>
+          <input type="text" id="lost-phone" name="lost-phone" placeholder="6948484343" required><br><br>
+          <label for="lost-email">Email:</label><br>
+          <input type="text" id="lost-email" name="lost-email" placeholder="themhs@gmail.com" required><br><br>
+          <label for="lost-photo">Upload a Photo of Your Pet:</label><br>
+          <input type="file" id="lost-photo" name="lost-photo" required><br><br>
+          <input type="submit" value="Submit Lost Pet">
+        </form> 
+        <br><br><br><hr>
+        <h2>Found Pets Photos</h2>
+        <div class="dog-photos">
+          <img src="dog8.png"  onclick="expandImage(this)">
+          <img src="dog9.png"  onclick="expandImage(this)">
+          <img src="dog10.png" onclick="expandImage(this)">
+          <img src="dog11.png" onclick="expandImage(this)">
+          <img src="dog12.png" onclick="expandImage(this)">
+          <img src="dog13.png" onclick="expandImage(this)">
+          <img src="dog14.png" onclick="expandImage(this)">
+        </div>
+
+        
+        
 
       
      </section>
@@ -488,6 +529,28 @@
     </script>
 
 
+    <!-- Script for the lost-pet-form donate button -->
+    <script>
+      const form5 = document.getElementById('lost-pet-form');
+      const submitButton5 = form5.querySelector('input[type="submit"]');
+
+      // If someone presses the submit button
+      form5.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Change the button text and style
+        submitButton5.value = 'We will do everything in our power to help you!';
+        submitButton5.style.backgroundColor = 'green';
+        submitButton5.style.color = 'white';
+        form5.reset(); // Clear the form
+        
+        // Restore it after 5 seconds
+        setTimeout(() => {
+          submitButton5.value = 'Submit Lost Pet';
+          submitButton5.style.backgroundColor = '';
+          submitButton5.style.color = '';
+        }, 5000);});
+    </script>
 
     <script>
       function expandImage(imgElement) {
