@@ -329,10 +329,16 @@
           <input type="number" id="amount" name="amount" min="1" placeholder="Enter the amount you would like to donate" required><br>
     
           <label for="payment-method">Payment Method:</label><br>
-          <label for="credit-card">Credit Card</label><br>
-          <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
-          <label for="paypal">PayPal</label><br>
-          <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+          <div class="payment-method-options">
+            <div>
+              <label for="credit-card">Credit Card</label>
+              <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+            </div>
+            <div>
+              <label for="paypal">PayPal</label>
+              <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+            </div>
+          </div>
           <input type="submit" value="Make Donation">
         </form>
       </body>
@@ -372,6 +378,8 @@
         <p>Welcome to our lost and found pets page. If have lost your pet, please use the form below to report it missing. If you have found a pet, please use the form below to report it. We will do our best to help reunite lost pets with their families as quickly as possible. Thank you for your help!</p>
         <hr>
         <h2>Lost Pet Form</h2>
+        <p>In order to help you locate your lost pet, we will need some information about it. Please complete the following form to provide us with the details we need to help you!</p>
+        
         <form id="lost-pet-form" method="post" action="/submit-lost-pet">
           <label for="lost-name">Pet Name:</label><br>
           <input type="text" id="lost-name" name="lost-name" placeholder="Jack" ><br>
@@ -389,6 +397,28 @@
           <input type="file" id="lost-photo" name="lost-photo" required><br><br>
           <input type="submit" value="Submit Lost Pet">
         </form> 
+        <br><br><br><hr>
+
+        <h2>Found Pet Form</h2>
+        <p>If you have found a lost pet and would like to help reunite it with its owner, please fill out the form below with your contact information so that we can get in touch with you. Thank you in advance for helping to reunite lost pets with their families!</p>
+        <form id="found-pet-form" method="post" action="/submit-found-pet">
+          <label for="found-name">Pet Name:</label><br>
+          <input type="text" id="found-name" name="found-name" placeholder="Not required. If the pet had a collar with the name on it, then write it." ><br>
+          <label for="found-breed">Pet Breed:</label><br>
+          <input type="text" id="found-breed" name="found-breed" placeholder="Chihuahua" ><br>
+          <label for="found-description">Pet Description:</label><br>
+          <textarea id="found-description" name="found-description" placeholder="The dog is orange and about 0.5 meters tall." required></textarea><br>
+          <label for="found-location">Location Found:</label><br>
+          <input type="text" id="found-location" name="found-location" placeholder="Found in Egnatia St." required><br>
+          <label for="found-phone">Phone Number:</label><br>
+          <input type="text" id="found-phone" name="found-phone" placeholder="6948484343" required><br><br>
+          <label for="found-email">Email:</label><br>
+          <input type="text" id="found-email" name="found-email" placeholder="themhs@gmail.com" required><br><br>
+          <label for="found-photo">Upload a Photo of the Pet:</label><br>
+          <input type="file" id="found-photo" name="found-photo" required><br><br>
+          <input type="submit" value="Submit Found Pet">
+        </form> 
+
         <br><br><br><hr>
         <h2>Found Pets Photos</h2>
         <div class="dog-photos">
@@ -549,6 +579,29 @@
           submitButton5.value = 'Submit Lost Pet';
           submitButton5.style.backgroundColor = '';
           submitButton5.style.color = '';
+        }, 5000);});
+    </script>
+
+    <!-- Script for the lost-pet-form donate button -->
+    <script>
+      const form6 = document.getElementById('found-pet-form');
+      const submitButton6 = form6.querySelector('input[type="submit"]');
+
+      // If someone presses the submit button
+      form6.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Change the button text and style 
+        submitButton6.value = 'Thanks a lot for your help!';
+        submitButton6.style.backgroundColor = 'green';
+        submitButton6.style.color = 'white';
+        form6.reset(); // Clear the form
+        
+        // Restore it after 5 seconds
+        setTimeout(() => {
+          submitButton6.value = 'Submit Found Pet';
+          submitButton6.style.backgroundColor = '';
+          submitButton6.style.color = '';
         }, 5000);});
     </script>
 

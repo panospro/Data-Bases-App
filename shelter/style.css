@@ -275,3 +275,19 @@ img + div {
   margin-top: 10px;
   width: calc(100% - 40px);
 }
+
+
+
+.payment-method-options {
+  display: flex;
+}
+
+
+input[type="radio"]#paypal {
+  display: inline-block;
+  margin-right: 150px; 
+}
+input[type="radio"]#credit-card {
+  display: inline-block;
+  margin-right: 250px; 
+}
