@@ -1,3 +1,4 @@
+<!-- ======================================== HTML Code ======================================== -->
 <link rel="stylesheet" href="style.css">
 
 <html>
@@ -18,6 +19,7 @@
       <h1>Animal Shelter</h1>
       <nav>
         <ul>
+          <!-- Create the subPages of the WebSite -->
           <li><a href="#" onclick="showSection('about')">Home Page</a></li>
           <li><a href="#" onclick="showSection('adopt')">Adopt</a></li>     
           <li><a href="#" onclick="showSection('foundlost')">Lost and Found Pets</a></li>
@@ -31,18 +33,20 @@
     <main>
       <!-- Home Page -->
       <section id="about">
+        <!-- Title -->
         <h2>Welcome to Our Animal Shelter!</h2>
         
-        <p>Our animal shelter was founded just a few short years ago by a group of compassionate animal lovers who saw the need for a safe and loving home for abandoned and homeless pets in our community. We started small, with a handful of dedicated volunteers and a single building to house and care for a few dozen animals. But from the very beginning, we were driven by our deep commitment to improving the lives of animals and promoting the human-animal bond.</p>
-        <p>As word of our mission and dedication spread, we began to grow. More and more people joined our team of volunteers, and we were able to expand our services and reach to help more animals in need. We added new buildings and programs, and our small shelter began to make a big impact.</p>
-
-        <p>Today, we are proud to be a thriving and vital part of the community, providing care and support to hundreds of animals and their families each year. We are always looking for new ways to make a difference and to reach even more animals in need. We are grateful for the support of our donors, volunteers, and community partners, who make our work possible and help us to move forward in our mission.</p>
+        <!-- Create the body of the Home Page -->
+        <p>The animal shelter was founded just a few years ago by animal lovers who saw the need for a safe and loving home for abandoned and homeless pets in our community. As a small organization, we started with a handful of dedicated volunteers and one building to house and care for a few dozen animals. Our commitment to improving the lives of animals and promoting human-animal relationships drove us from the beginning.</p>
+        <p>After word spread about our mission and dedication, we began to grow. We expanded our services and reach to help more animals in need as more volunteers joined our team. New buildings and programs were built and our small shelter started making a big difference.</p>
+        <p>With determination and hard work we managed today to be an important and useful member of society and help several hundreds of animal lives every year.We are always looking for new ways to make a difference and to reach even more animals in need. We are grateful for the support of our donors, volunteers and community partners, who make our work possible and help us to move forward in our mission.</p>
+        
+        <!-- The logo of the shelter -->
         <img src="shelter-logo.png" alt="Shelter Logo" style="display: block; margin: 0 auto; width: 500px; height: 500px">
-        <p>At our animal shelter, we are dedicated to rescuing and rehoming abandoned and homeless pets. We provide a safe and loving environment for them until they find their forever homes.</p>
-        <p>Our team of passionate and dedicated staff and volunteers work tirelessly to care for the animals and find them loving homes. We also offer a range of services to the community, including adoptions, spay/neuter surgeries, and microchipping.</p>
-        <p>We believe that every animal deserves a chance at a happy and healthy life, and we are committed to making a difference in the lives of as many animals as possible. We hope you will consider supporting us in our mission by adopting, volunteering, or donating to our shelter. Thank you for your support!</p>
-        <div style="text-align: center">
-          
+        <p>We are dedicated to rescuing and rehoming abandoned and homeless pets. We provide a safe and loving environment for them until they find their forever homes.</p>
+        <p>Our team consists of excellent and talented people,  who strive to help the lives of countless animals.We also offer a range of services to the community, including adoptions, spay/neuter surgeries and microchipping.</p>
+        <p>We really care about animals and want them to be happy and healthy. If you adopt a pet, volunteer, or donate, you can help us achieve our goal. Thank you for your support!</p>
+        <div style="text-align: center">  
           <a href="#" onclick="showSection('adopt')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Adoptions</a>
           <a href="#" onclick="showSection('volunteer')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Volunteering</a>
           <a href="#" onclick="showSection('donate')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Donating</a>
@@ -52,27 +56,47 @@
 
 
 
-
+      <!-- Adopt Page -->
       <section id="adopt">
+        <!-- Title -->
         <h2>Adopt a Pet</h2>
-        <p>Welcome to our adoptable animals page! Here you will find a selection of lovable and affectionate pets who are looking 
-          for their forever homes. If you see a pet that you're interested in, please visit them at our shelter or contact us to learn 
-          more and schedule a meet and greet. Thank you for considering adoption and for giving one of our animals the loving home they deserve!</p>
-        <ul>
-          <li>
-            <h3>Max and Jack</h3>
-            <img src="dog1.png" alt="dog1">
-            <p>Max and Jack are friendly and playful 2-month-old Labrador Retrievers. They love going for walks and playing fetch. These pups are looking for a family who can give them the attention and exercise they need to thrive. Could your family be the one they've been waiting for?</p>        
-            
-          </li>
-          <li>
-            <h3>Buddy</h3>
-            <img src="dog2.png" alt="dog2">
-            <p>Buddy is a lovable and energetic 1-year-old German Shepherd. He loves playing fetch and cuddling with you. Buddy would make a great companion for an active family who can provide him with plenty of mental and physical stimulation. Could that be you?</p>
-          </li>
-        </ul>
+        
+        <!-- Introduction -->
+        <p>Thank you for considering adoption! By adopting a pet from our shelter, you are giving a second chance to a deserving animal and providing them with a loving forever home. All of our animals are spayed/neutered, microchipped and up to date on vaccinations before they go home with their new families.</p>
+        
+        <!-- Adoption Process -->
+        <h3>Adoption Process</h3>
+        <p>Adopting a pet from our shelter is easy! Just follow these steps:</p>
+        <ol>
+          <li>Browse our available pets and decide which one you would like to adopt</li>
+          <li>Contact us to set up a meet and greet with the pet</li>
+          <li>Fill out an adoption application and bring it with you to the meet and greet</li>
+          <li>If the meet and greet goes well and your application is approved, you can take your new pet home with you that day!</li>
+        </ol>
+        <p>Please note that we do require a home visit as part of our adoption process to ensure that the pet is going to a suitable home. We also require a minimum donation to help cover the cost of care for the animal.</p>
+        
+
+        <!-- Photos of Dogs -->
+        <h3>Meet Our Dogs</h3>
+        <div class="dog-photos">
+          <img src="dog1.png" alt="Meet Max and Jack are friendly and playful 2-month-old Labrador Retrievers. They love going for walks and playing fetch. These pups are looking for a family who can give them the attention and exercise they need to thrive. Could your family be the one they've been waiting for?" onclick="expandImage(this)">
+          <img src="dog2.png" alt="Buddy is a lovable and energetic 1-year-old German Shepherd. He loves playing fetch and cuddling with you. Buddy would make a great companion for an active family who can provide him with plenty of mental and physical stimulation. Could that be you?" onclick="expandImage(this)">
+          <img src="dog3.jpg" alt="Dog 3" onclick="expandImage(this)">
+          <!-- Add more photos here -->
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modal-img">
+          <div id="modal-caption"></div>
+        </div>
+
+
+        <!-- Contact Us -->
+        <h3>Apply for adoption!</h3>
+        <p>If you want to become a volunteer, apply <a href="#" onclick="showSection('contact')">here</a>.</p>
       </section>
-      
 
 
 
@@ -90,8 +114,8 @@
       <!-- Volunteer -->
       <section id="volunteer">
         <h2>Volunteer</h2>
-        <p>Join our team of dedicated volunteers and make a difference in the lives of our animals. We have a variety of opportunities available, including socializing with the animals, cleaning cages, grooming pets, and helping with events such as adoption days and fundraising events. </p>
-         <p> Our volunteers typically commit to a minimum of 2 hours per week, but we welcome volunteers who are able to commit to more time. To get started, please fill out our online application form or contact us to learn more about volunteering opportunities. Thank you for considering supporting our mission as a volunteer!</p>
+        <p>Join our team of dedicated volunteers and make a difference in the lives of our animals. We have a variety of opportunities available, including socializing with the animals, cleaning cages, grooming pets and helping with events such as adoption days and fundraising events. </p>
+         <p> Our volunteers typically work about 2 hours per week, but we welcome volunteers who are able to allocate some more time. To get started, please fill out our online application form or contact us to learn more about volunteering opportunities. Thank you for considering supporting our mission as a volunteer!</p>
         <h3>Upcoming Volunteer Events</h3>
         <table>
           <tr>
@@ -131,19 +155,19 @@
       
         <h3>Current Volunteer Testimonials</h3>
         <blockquote>
-          "I have been volunteering at the animal shelter for the past year, and it has been such a rewarding experience. I love being able to help the animals and see them find their forever homes. The staff and other volunteers are so friendly and supportive, and I have made some great friends through volunteering at the shelter. I highly recommend volunteering here to anyone who loves animals and wants to make a difference."
+          "Volunteering at the animal shelter was a fulfilling and enriching experience. The staff and other volunteers are passionate and welcoming and the animals received a lot of love and care. The volunteer experience allowed the writer to learn new things and make new friends. They would highly recommend volunteering at the animal shelter to anyone"
         </blockquote>
         <blockquote>
-          "I started volunteering at the animal shelter because I wanted to do something meaningful with my time. It has been an amazing experience, and I have learned so much about caring for animals. The staff and other volunteers are all so dedicated and passionate, and it's contagious! I feel grateful to be able to contribute in a small way to the important work they do."
+          "I started volunteering at the animal shelter because I wanted to do something meaningful . It has been an amazing experience and I have learned so much about caring for animals. The staff and other volunteers are all so dedicated and passionate and it's contagious! I feel grateful to be able to contribute in a small way to the important work they do"
         </blockquote>
 
         <h3>Volunteer Jobs</h3>
-        <p>Our volunteers are an integral part of our team and play a vital role in the care and well-being of the animals at our shelter. Some of the tasks and responsibilities that volunteers may be involved in include:</p>
+        <p>Our volunteers are an huge part of our team and play a vital role in the care and well-being of the animals at our shelter. Some of the tasks and responsibilities that volunteers are involved in are the following  :</p>
         <ul>
-          <li>Socializing with the animals: Spending time with the animals, playing with them, and providing them with love and attention is an important part of their care and helps to improve their mental and emotional health. Volunteers may also be involved in basic training and obedience exercises with the animals.</li>
-          <li>Cleaning cages and kennels: Maintaining a clean and healthy environment for the animals is essential to their well-being. Volunteers may be responsible for cleaning and disinfecting cages, kennels, and other areas of the shelter, as well as changing bedding and providing fresh water and food for the animals.</li>
-          <li>Grooming pets: Many of the animals at our shelter have long fur or require regular grooming to maintain their health and appearance. Volunteers may be responsible for brushing, bathing, and drying the animals, as well as trimming nails and cleaning ears.</li>
-          <li>Helping with events: Our shelter hosts a variety of events throughout the year, including adoption days, fundraising events, and community outreach events. Volunteers may be asked to help with set-up, registration, and other tasks to ensure the smooth running of these events.</li>
+          <li>Socializing with the animals: Spending time with the animals, playing with them and providing them with love and attention is an important part of their care and helps to improve their mental and emotional health. Volunteers may also be involved in basic training and obedience exercises with the animals.</li>
+          <li>Cleaning cages and kennels: Maintaining a clean and healthy environment for the animals is essential to their well-being. Volunteers may be responsible for cleaning and disinfecting cages, kennels and other areas of the shelter, as well as changing bedding and providing fresh water and food for the animals.</li>
+          <li>Grooming pets: Many of the animals at our shelter have long fur or require regular grooming to maintain their health and appearance. Volunteers may be responsible for brushing, bathing and drying the animals, as well as trimming nails and cleaning ears.</li>
+          <li>Helping with events: Our shelter hosts a variety of events throughout the year, including adoption days, fundraising events and community outreach events. Volunteers may be asked to help with set-up, registration and other tasks to ensure the smooth running of these events.</li>
         </ul>
         <h3>Apply for volunteer</h3>
         <p>If you want to become a volunteer, apply <a href="#" onclick="showSection('contact')">here</a>.</p>
@@ -162,8 +186,8 @@
         <p>Have a question or want to get involved?</p>
         <p>Contact us at:</p>
         <ul>
-          <li>Phone: 2310-156-156</li>
-          <li>Email: animalshelterthes@gmail.com</li>
+          <li>Phone <span class="phone-symbol">&#x260E;</span>: 2310-156-156</li>
+          <li>Email <span class="email-symbol">&#x2709;</span>: animalshelterthes@gmail.com</li>
         </ul>
 
         <p>Visit us at:</p>
@@ -194,7 +218,7 @@
         <h4><button onclick="showSection2('section3')">3</button> What types of animals do you have available for adoption?</h4>
         <section id="section3" style="display: none">
           <div>
-            <p>At this very moment we only have dogs available for adoption, in the future we will try to include cats, rabbits, and small mammals such as guinea pigs and hamsters. We may also inlcude reptiles and birds. Please check our <a href="#" onclick="showSection('adopt')">adoption page</a> for a current list of available animals.</p>
+            <p>At this very moment we only have dogs available for adoption, in the future we will try to include cats, rabbits and small mammals such as guinea pigs and hamsters. We may also inlcude reptiles and birds. Please check our <a href="#" onclick="showSection('adopt')">adoption page</a> for a current list of available animals.</p>
           </div>
         </section>
 
@@ -239,7 +263,7 @@
         <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="jack@gmail.com" required><br>
+        <input type="email" id="email" name="email" placeholder="themhs@gmail.com" required><br>
 
         <label for="phone">Phone:</label><br>
         <input type="tel" id="phone" name="phone" placeholder="6948876545" required><br>
@@ -253,14 +277,38 @@
         <label for="interests">Interests and skills:</label><br>
         <textarea id="interests" name="interests" rows="5" placeholder="I am good at grooming dogs." required></textarea><br>
         <input type="submit" value="Submit Application">
+        
       </form> 
+
+      <br><br><br><br>
+      <hr>
+      <h1>Adoption Form</h1>
+      <p>Thank you for considering adoption! We are so excited to help you find the perfect furry companion to join your family. Adopting a pet is a big responsibility, but it is also a rewarding experience that brings joy and love to your life.</p>
+      <form id="adoption-form" method="post" action="/submit-adoption-application">
+        <h2>Adoption Form</h2>
+        <p>Thank you for considering adopting a pet from our shelter. Please fill out the form below to apply to adopt a pet. All fields are required.</p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="themhs@gmail.com" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="6948876545" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" placeholder="Egnatia 1." required><br>
+        <label for="pet-preference">Pet Preferences:</label><br>
+        <textarea id="pet-preference" name="pet-preference" rows="5" placeholder="I am looking for a small breed dog with short hair." required></textarea><br>
+        <label for="experience">Experience with pets:</label><br>
+        <textarea id="experience" name="experience" rows="5" placeholder="I owned a dog for 10 years." required></textarea><br>
+        <input type="submit" value="Submit Adoption Application">
+      </form>
+
     </section>
     
     <!-- Donate -->
     <section id="donate">
       <h2>Welcome to our Donation Page!</h2>
       <h1>Thank You for Your Support!</h1>
-      <p>We are so grateful for your generosity and kindness in supporting our organization. Your donation will make a huge difference in the lives of those in need, and we cannot thank you enough. Your support is truly appreciated and will go a long way in helping us achieve our mission. Thank you again for your support!</p>
+      <p>Thank you for considering a donation to our organization! Your support is vital in helping us achieve our mission and make a positive impact in the world. If you have any questions or concerns, please don't hesitate to <a href="#" onclick="showSection('contact')">contact us</a>. We are here to help and support you in any way we can.</p>
       <head>
         <title>Donation Form</title>
       </head>
@@ -272,7 +320,7 @@
           <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
     
           <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" placeholder="jack@gmail.com" required><br>
+          <input type="email" id="email" name="email" placeholder="themhs@gmail.com" required><br>
     
           <label for="amount">Donation Amount:</label><br>
           <input type="number" id="amount" name="amount" min="1" placeholder="Enter the amount you would like to donate" required><br>
@@ -303,7 +351,10 @@
 
     
   </main>
-    
+
+  
+    <!-- ======================================== JavaScript Code ======================================== -->
+
     <!-- Script to show and hide the different sections -->
     <script>
       function showSection(sectionId) {
@@ -318,12 +369,13 @@
       }
     </script>
 
+    <!-- This scipt is for faqs -->
     <script>
       function showSection2(sectionId) {
         // Select the section element with the specified ID
         const section = document.querySelector(`#${sectionId}`);
 
-        // Toggle the display property of the element to show or hide it
+        // Toggle the display of the element to show or hide it
         if (section.style.display === 'none') {
           section.style.display = 'block';
         } else {
@@ -337,10 +389,10 @@
       window.addEventListener('scroll', function() {
       // Check if the user has scrolled to the bottom of the page
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        // Add the "show-footer" class to the body element
+        // Add the show-footer to the body
         document.body.classList.add('show-footer');
       } else {
-        // Remove the "show-footer" class from the body element
+        // Remove the show-footer from the body
         document.body.classList.remove('show-footer');
       }
     });    
@@ -351,6 +403,7 @@
       const form = document.getElementById('volunteer-application-form');
       const submitButton = form.querySelector('input[type="submit"]');
 
+      // If someone presses the submit button
       form.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -360,6 +413,7 @@
         submitButton.style.color = 'white';
         form.reset(); // Clear the form
         
+        // Restore it after 5 seconds
         setTimeout(() => {
           submitButton.value = 'Submit Application';
           submitButton.style.backgroundColor = '';
@@ -367,11 +421,39 @@
         }, 5000);});
     </script>
 
+
+</script>
+
+<!-- Script for the adoption-application-form submit button -->
+<script>
+  const form3 = document.getElementById('adoption-form');
+  const submitButton3 = form3.querySelector('input[type="submit"]');
+
+  // If someone presses the submit button
+  form3.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Change the button text and style
+    submitButton3.value = 'Adoption Application submitted. Congratulations!!!';
+    submitButton3.style.backgroundColor = 'green';
+    submitButton3.style.color = 'white';
+    form.reset(); // Clear the form
+    
+    // Restore it after 5 seconds
+    setTimeout(() => {
+      submitButton3.value = 'Submit Adoption Application';
+      submitButton3.style.backgroundColor = '';
+      submitButton3.style.color = '';
+    }, 5000);});
+</script>
+
+
     <!-- Script for the donation-form donate button -->
     <script>
       const form2 = document.getElementById('donation-form');
       const submitButton2 = form2.querySelector('input[type="submit"]');
 
+      // If someone presses the submit button
       form2.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -381,6 +463,7 @@
         submitButton2.style.color = 'white';
         form2.reset(); // Clear the form
         
+        // Restore it after 5 seconds
         setTimeout(() => {
           submitButton2.value = 'Make Donation';
           submitButton2.style.backgroundColor = '';
@@ -389,6 +472,40 @@
     </script>
 
 
+
+    <script>
+      function expandImage(imgElement) {
+      // Check if the image is already expanded
+      if (imgElement.style.width === "500px") {
+        // If the image is already expanded, restore it to its original size
+        imgElement.style.width = "";
+        imgElement.style.height = "";
+        
+        // Remove the context div element from the DOM
+        var contextDiv = imgElement.nextSibling;
+        contextDiv.parentNode.removeChild(contextDiv);
+      } else {
+        // If the image is not already expanded, get the alt attribute of the clicked image
+        var context = imgElement.alt;
+      
+        // Set the width and height of the image to a larger value
+        imgElement.style.width = "500px";
+        imgElement.style.height = "500px";
+      
+        // Create a div element to contain the context
+        var contextDiv = document.createElement('div');
+      
+        // Set the content of the div element to the alt attribute of the clicked image
+        contextDiv.innerHTML = context;
+      
+        // Insert the div element after the image element in the DOM
+        imgElement.parentNode.insertBefore(contextDiv, imgElement.nextSibling);
+        }
+      } 
+
+
+    
+      </script>
   </body>
 </html>
  
