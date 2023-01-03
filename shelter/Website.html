@@ -35,7 +35,7 @@
       <section id="about">
         <!-- Title -->
         <h2>Welcome to Our Animal Shelter!</h2>
-        
+
         <!-- Create the body of the Home Page -->
         <p>The animal shelter was founded just a few years ago by animal lovers who saw the need for a safe and loving home for abandoned and homeless pets in our community. As a small organization, we started with a handful of dedicated volunteers and one building to house and care for a few dozen animals. Our commitment to improving the lives of animals and promoting human-animal relationships drove us from the beginning.</p>
         <p>After word spread about our mission and dedication, we began to grow. We expanded our services and reach to help more animals in need as more volunteers joined our team. New buildings and programs were built and our small shelter started making a big difference.</p>
@@ -52,6 +52,7 @@
           <a href="#" onclick="showSection('donate')" style="background-color: #00b8d4; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;">Learn More About Donating</a>
         </div>
       </section>
+
 
 
 
@@ -100,12 +101,6 @@
         <h3>Apply for adoption!</h3>
         <p>If you want to adopt one or more of our dogs, you can contact us at <a href="#" onclick="showSection('contact')">here</a>.</p>
       </section>
-
-
-
-
-
-
 
 
 
@@ -304,7 +299,7 @@
         <textarea id="experience" name="experience" rows="5" placeholder="I owned a dog for 10 years." required></textarea><br>
         <input type="submit" value="Submit Adoption Application">
       </form>
-
+      <br><br>
     </section>
     
     <!-- Donate -->
@@ -341,6 +336,7 @@
           </div>
           <input type="submit" value="Make Donation">
         </form>
+        <br><br>
       </body>
     </section>
 
@@ -364,11 +360,6 @@
 
 
 
-
-
-
-
-
      <!-- Lost and Found -->
      <section id="foundlost">
       <h2>Lost and Found Pets</h2>
@@ -380,23 +371,26 @@
         <h2>Lost Pet Form</h2>
         <p>In order to help you locate your lost pet, we will need some information about it. Please complete the following form to provide us with the details we need to help you!</p>
         
-        <form id="lost-pet-form" method="post" action="/submit-lost-pet">
+
+        <form id="lost-pet-a" method="post" action="backend.php" onsubmit="alert('Form submitted! We will do everything in our power to help you!')">
           <label for="lost-name">Pet Name:</label><br>
           <input type="text" id="lost-name" name="lost-name" placeholder="Jack" ><br>
           <label for="lost-breed">Pet Breed:</label><br>
-          <input type="text" id="lost-breed" name="lost-breed" placeholder="Chihuahua" required><br>
+          <input type="text" id="lost-breed" name="lost-breed" placeholder="Chihuahua" ><br>
           <label for="lost-description">Pet Description:</label><br>
           <textarea id="lost-description" name="lost-description" placeholder="My dog is orange and about 0.5 meters tall." required></textarea><br>
           <label for="lost-location">Last Known Location:</label><br>
           <input type="text" id="lost-location" name="lost-location" placeholder="Last time seen in Egnatia St." required><br>
           <label for="lost-phone">Phone Number:</label><br>
-          <input type="text" id="lost-phone" name="lost-phone" placeholder="6948484343" required><br><br>
+          <input type="text" id="lost-phone" name="lost-phone" placeholder="The phone number must be 10 numbers! e.g. 6948484343 " pattern="[0-9]{10}" required><br><br>
           <label for="lost-email">Email:</label><br>
-          <input type="text" id="lost-email" name="lost-email" placeholder="themhs@gmail.com" required><br><br>
+          <input type="email" id="lost-email" name="lost-email" placeholder="themhs@gmail.com" required><br><br>
           <label for="lost-photo">Upload a Photo of Your Pet:</label><br>
-          <input type="file" id="lost-photo" name="lost-photo" required><br><br>
+          <input type="file" id="lost-photo" name="lost-photo" accept="image/jpeg, image/png" required><br><br>
           <input type="submit" value="Submit Lost Pet">
         </form> 
+
+
         <br><br><br><hr>
 
         <h2>Found Pet Form</h2>
@@ -422,21 +416,16 @@
         <br><br><br><hr>
         <h2>Found Pets Photos</h2>
         <div class="dog-photos">
-          <img src="dog8.png"  onclick="expandImage(this)">
-          <img src="dog9.png"  onclick="expandImage(this)">
-          <img src="dog10.png" onclick="expandImage(this)">
-          <img src="dog11.png" onclick="expandImage(this)">
-          <img src="dog12.png" onclick="expandImage(this)">
-          <img src="dog13.png" onclick="expandImage(this)">
-          <img src="dog14.png" onclick="expandImage(this)">
+          <img src="dog8.png"  onclick="expandImage2(this)">
+          <img src="dog9.png"  onclick="expandImage2(this)">
+          <img src="dog10.png" onclick="expandImage2(this)">
+          <img src="dog11.png" onclick="expandImage2(this)">
+          <img src="dog12.png" onclick="expandImage2(this)">
+          <img src="dog13.png" onclick="expandImage2(this)">
+          <img src="dog14.png" onclick="expandImage2(this)">
         </div>
-
         
-        
-
-      
-     </section>
-    
+     </section>    
   </main>
 
   
@@ -559,49 +548,26 @@
     </script>
 
 
-    <!-- Script for the lost-pet-form donate button -->
+    <!-- Script for the found-pet-form donate button -->
     <script>
-      const form5 = document.getElementById('lost-pet-form');
-      const submitButton5 = form5.querySelector('input[type="submit"]');
+      const form1 = document.getElementById('found-pet-form');
+      const submitButton1 = form1.querySelector('input[type="submit"]');
 
       // If someone presses the submit button
-      form5.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        // Change the button text and style
-        submitButton5.value = 'We will do everything in our power to help you!';
-        submitButton5.style.backgroundColor = 'green';
-        submitButton5.style.color = 'white';
-        form5.reset(); // Clear the form
-        
-        // Restore it after 5 seconds
-        setTimeout(() => {
-          submitButton5.value = 'Submit Lost Pet';
-          submitButton5.style.backgroundColor = '';
-          submitButton5.style.color = '';
-        }, 5000);});
-    </script>
-
-    <!-- Script for the lost-pet-form donate button -->
-    <script>
-      const form6 = document.getElementById('found-pet-form');
-      const submitButton6 = form6.querySelector('input[type="submit"]');
-
-      // If someone presses the submit button
-      form6.addEventListener('submit', (event) => {
+      form1.addEventListener('submit', (event) => {
         event.preventDefault();
 
         // Change the button text and style 
-        submitButton6.value = 'Thanks a lot for your help!';
-        submitButton6.style.backgroundColor = 'green';
-        submitButton6.style.color = 'white';
-        form6.reset(); // Clear the form
+        submitButton1.value = 'Thanks a lot for your help!';
+        submitButton1.style.backgroundColor = 'green';
+        submitButton1.style.color = 'white';
+        form1.reset(); // Clear the form
         
         // Restore it after 5 seconds
         setTimeout(() => {
-          submitButton6.value = 'Submit Found Pet';
-          submitButton6.style.backgroundColor = '';
-          submitButton6.style.color = '';
+          submitButton1.value = 'Submit Found Pet';
+          submitButton1.style.backgroundColor = '';
+          submitButton1.style.color = '';
         }, 5000);});
     </script>
 
@@ -634,9 +600,35 @@
         imgElement.parentNode.insertBefore(contextDiv, imgElement.nextSibling);
         }
       } 
+      </script>
 
 
-    
+
+      <script>
+        function expandImage2(imgElement) {
+        // Check if the image is already expanded
+        if (imgElement.style.width === "500px") {
+          // If the image is already expanded, restore it to its original size
+          imgElement.style.width = "";
+          imgElement.style.height = "";
+          
+          // Remove the context div element from the DOM
+          var contextDiv = imgElement.nextSibling;
+          contextDiv.parentNode.removeChild(contextDiv);
+        } else {
+          // If the image is not already expanded, get the alt attribute of the clicked image
+          var context = imgElement.alt;
+        
+          // Set the width and height of the image to a larger value
+          imgElement.style.width = "500px";
+          imgElement.style.height = "500px";
+        
+          // Create a div element to contain the context
+          var contextDiv = document.createElement('div');
+        
+          // Set the content of the div element to the alt attribute of the clicked image
+          contextDiv.innerHTML = context;}
+        } 
       </script>
   </body>
 </html>

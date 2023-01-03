@@ -43,7 +43,7 @@ main {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.658);
   border-radius: 10px;
 }
 
@@ -106,7 +106,7 @@ th, td {
   text-align: left;
   padding: 8px;
 }
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #f2f2f2}
 th {
   background-color: #4CAF50;
   color: white;
