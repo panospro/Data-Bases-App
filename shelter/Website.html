@@ -254,7 +254,7 @@
       <div>
         <p>Thank you for visiting our volunteering page and considering making a contribution to our organization. Your support is greatly appreciated and will help us make a difference in the lives of those in need. Please use the form below to make an application.</p>
       </div>
-      <form id="volunteer-application-form" method="post" action="/submit-application">
+      <form id="volunteer-am" method="post" action="nvolunteers.php" onsubmit="alert('Form submitted! Thank you for offering to volunteer! Your help is greatly appreciated and we are grateful for your support!!')">
         <h2>Volunteer Application Form</h2>
         <p>Thank you for your interest in volunteering at our animal shelter! Please fill out the form below to apply to become a volunteer. All fields are required.</p>
         <label for="name">Name:</label><br>
@@ -264,7 +264,7 @@
         <input type="email" id="email" name="email" placeholder="themhs@gmail.com" required><br>
 
         <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="6948876545" required><br>
+        <input type="tel" id="phone" name="phone" placeholder="The phone number must be 10 numbers! e.g. 6948484343 " pattern="[0-9]{10}" required><br>
 
         <label for="availability">Availability:</label><br>
         <textarea id="availability" name="availability" rows="5" placeholder="Available on Tuesdays and Mondays at 8am." required></textarea><br>
@@ -282,7 +282,7 @@
       <hr>
       <h1>Adoption Form</h1>
       <p>Thank you for considering adoption! We are so excited to help you find the perfect furry companion to join your family. Adopting a pet is a big responsibility, but it is also a rewarding experience that brings joy and love to your life.</p>
-      <form id="adoption-form" method="post" action="/submit-adoption-application">
+      <form id="adoption-f" method="post" action="nadopt.php" onsubmit="alert('Form submitted! Thank you for offering to adopt one of our pets! We are thrilled that you want to provide a loving home for one of our animals!!')">
         <h2>Adoption Form</h2>
         <p>Thank you for considering adopting a pet from our shelter. Please fill out the form below to apply to adopt a pet. All fields are required.</p>
         <label for="name">Name:</label><br>
@@ -290,7 +290,7 @@
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" placeholder="themhs@gmail.com" required><br>
         <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="6948876545" required><br>
+        <input type="tel" id="phone" name="phone" placeholder="The phone number must be 10 numbers! e.g. 6948484343 " pattern="[0-9]{10}" required><br>
         <label for="address">Address:</label><br>
         <input type="text" id="address" name="address" placeholder="Egnatia 1." required><br>
         <label for="pet-preference">Pet Preferences:</label><br>
@@ -313,7 +313,7 @@
       <body>
         <h1>Donation Form</h1>
         <p>Thank you for considering making a donation to our organization. Please fill out the form below to make a donation using a credit card or PayPal.</p>
-        <form id="donation-form" method="post" action="/process-donation">
+        <form id="donation-f" method="post" action="donation.php"  onsubmit="alert('Form submitted! Thank you for your generous donation. Your support helps us to continue our mission of helping animals in need!!')">
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name" placeholder="Enter your first and last name" required><br>
     
@@ -395,7 +395,7 @@
 
         <h2>Found Pet Form</h2>
         <p>If you have found a lost pet and would like to help reunite it with its owner, please fill out the form below with your contact information so that we can get in touch with you. Thank you in advance for helping to reunite lost pets with their families!</p>
-        <form id="found-pet-form" method="post" action="/submit-found-pet">
+        <form id="found-pet" method="post" action="found.php" onsubmit="alert('Form submitted! Thanks a lot for you help!!')">
           <label for="found-name">Pet Name:</label><br>
           <input type="text" id="found-name" name="found-name" placeholder="Not required. If the pet had a collar with the name on it, then write it." ><br>
           <label for="found-breed">Pet Breed:</label><br>
@@ -405,11 +405,11 @@
           <label for="found-location">Location Found:</label><br>
           <input type="text" id="found-location" name="found-location" placeholder="Found in Egnatia St." required><br>
           <label for="found-phone">Phone Number:</label><br>
-          <input type="text" id="found-phone" name="found-phone" placeholder="6948484343" required><br><br>
+          <input type="text" id="found-phone" name="found-phone" placeholder="The phone number must be 10 numbers! e.g. 6948484343 " pattern="[0-9]{10}" required><br><br>
           <label for="found-email">Email:</label><br>
-          <input type="text" id="found-email" name="found-email" placeholder="themhs@gmail.com" required><br><br>
+          <input type="email" id="found-email" name="found-email" placeholder="themhs@gmail.com" required><br><br>
           <label for="found-photo">Upload a Photo of the Pet:</label><br>
-          <input type="file" id="found-photo" name="found-photo" required><br><br>
+          <input type="file" id="found-photo" name="found-photo" accept="image/jpeg, image/png" required><br><br>
           <input type="submit" value="Submit Found Pet">
         </form> 
 
@@ -431,7 +431,7 @@
   
     <!-- ======================================== JavaScript Code ======================================== -->
 
-    <!-- Script to show and hide the different sections -->
+    <!-- Show and hide the different sections -->
     <script>
       function showSection(sectionId) {
         // Hide all sections
@@ -445,10 +445,10 @@
       }
     </script>
 
-    <!-- This scipt is for faqs -->
+    <!-- For faqs -->
     <script>
       function showSection2(sectionId) {
-        // Select the section element with the specified ID
+        // Select the section element with the specified Id
         const section = document.querySelector(`#${sectionId}`);
 
         // Toggle the display of the element to show or hide it
@@ -460,7 +460,7 @@
       }
     </script>
 
-    <!-- Script that makes the footer appear, when someone scrolls all down the page -->
+    <!-- Make the footer appear, when someone scrolls all down the page -->
     <script>
       window.addEventListener('scroll', function() {
       // Check if the user has scrolled to the bottom of the page
@@ -474,103 +474,7 @@
     });    
     </script>
 
-    <!-- Script for the volunteer-application-form submit button -->
-    <script>
-      const form = document.getElementById('volunteer-application-form');
-      const submitButton = form.querySelector('input[type="submit"]');
-
-      // If someone presses the submit button
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        // Change the button text and style
-        submitButton.value = 'Application submitted';
-        submitButton.style.backgroundColor = 'green';
-        submitButton.style.color = 'white';
-        form.reset(); // Clear the form
-        
-        // Restore it after 5 seconds
-        setTimeout(() => {
-          submitButton.value = 'Submit Application';
-          submitButton.style.backgroundColor = '';
-          submitButton.style.color = '';
-        }, 5000);});
-    </script>
-
-
-</script>
-
-<!-- Script for the adoption-application-form submit button -->
-<script>
-  const form3 = document.getElementById('adoption-form');
-  const submitButton3 = form3.querySelector('input[type="submit"]');
-
-  // If someone presses the submit button
-  form3.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    // Change the button text and style
-    submitButton3.value = 'Adoption Application submitted. Congratulations!!!';
-    submitButton3.style.backgroundColor = 'green';
-    submitButton3.style.color = 'white';
-    form.reset(); // Clear the form
-    
-    // Restore it after 5 seconds
-    setTimeout(() => {
-      submitButton3.value = 'Submit Adoption Application';
-      submitButton3.style.backgroundColor = '';
-      submitButton3.style.color = '';
-    }, 5000);});
-</script>
-
-
-    <!-- Script for the donation-form donate button -->
-    <script>
-      const form2 = document.getElementById('donation-form');
-      const submitButton2 = form2.querySelector('input[type="submit"]');
-
-      // If someone presses the submit button
-      form2.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        // Change the button text and style
-        submitButton2.value = 'Donation made!!! Thank you for your contribution!!!';
-        submitButton2.style.backgroundColor = 'green';
-        submitButton2.style.color = 'white';
-        form2.reset(); // Clear the form
-        
-        // Restore it after 5 seconds
-        setTimeout(() => {
-          submitButton2.value = 'Make Donation';
-          submitButton2.style.backgroundColor = '';
-          submitButton2.style.color = '';
-        }, 5000);});
-    </script>
-
-
-    <!-- Script for the found-pet-form donate button -->
-    <script>
-      const form1 = document.getElementById('found-pet-form');
-      const submitButton1 = form1.querySelector('input[type="submit"]');
-
-      // If someone presses the submit button
-      form1.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        // Change the button text and style 
-        submitButton1.value = 'Thanks a lot for your help!';
-        submitButton1.style.backgroundColor = 'green';
-        submitButton1.style.color = 'white';
-        form1.reset(); // Clear the form
-        
-        // Restore it after 5 seconds
-        setTimeout(() => {
-          submitButton1.value = 'Submit Found Pet';
-          submitButton1.style.backgroundColor = '';
-          submitButton1.style.color = '';
-        }, 5000);});
-    </script>
-
+    <!-- For the pictures of adopt -->
     <script>
       function expandImage(imgElement) {
       // Check if the image is already expanded
@@ -602,8 +506,7 @@
       } 
       </script>
 
-
-
+      <!-- For the pictures of lost and found -->
       <script>
         function expandImage2(imgElement) {
         // Check if the image is already expanded
