@@ -1,56 +1,55 @@
-# Data-Bases-App
+# Data Bases App
 
-## Παραδόθηκε ένας φάκελος, μέσα στον οποίο υπάρχει:
-* Ένας φάκελος που περιέχει όλα τα απαραίτητα αρχεία για να στήσετε την ιστοσελίδα. Ο φάκελος αυτος περιέχει τα επόμενα αρχεία:
-  * Ένα αρχείο Website.html, το οποίο περιέχει όλο τον κώδικα γραμμένο σε html και javascript, δηλαδή τον σκελετό και την διαδικασία που κάνουν τα κουμπιά που πατιούνται στην ιστοσελίδα
-  * Ένα αρχείο style.css, που περιέχει την εμφάνιση της ιστοσελίδας
-  * 14 φωτογραφίες ζώων .png, που χρησιμοποιούνται στην ιστοσελίδα
-  * Πέντε αρχεία .php, που βοηθούν την ιστοσελίδα να στέλνει τις πληροφορίες που συμπληρώνει κάποιος σε μία φόρμα, στην βάση μας
-  * Ένα αρχείο shelterdb.sql, που περιέχει τον κώδικα ολόκληρης της βάσης μας και θα μας βοηθήσει παρακάτω να ενώσουμε την βάση μας με τον ίστο (τοπικό ιστό).
-* Το παρόν αρχείο README.md (το οποίο μπορείτε να το ανοίξετε με όποιο τρόπο θέλετε)
+## In the 'shelter' folder there is:
+* A folder containing all the files necessary to set up the website. This folder contains the following files:
+  * A Website.html file, which contains all the code written in html and javascript, i.e. the skeleton and the process that the buttons clicked on the website do
+  * A style.css file, which contains the appearance of the website
+  * 14 animal .png photos, used on the website
+  * Five .php files, which help the website to send the information that someone fills out on a form to our database
+  * A shelterdb.sql file, which contains the code of our entire database and will help us below to connect our database to the equal (local web).
+* The present README.md file (which you can open in any way you like)
 
-Το πρώτο πράγμα που πρέπει να κάνετε πριν ξεκινήσετε να περιηγείστε στην ιστοσελίδα είναι να κάνετε την βάση να λειτουργεί στο internet σε localhost και όχι σαν αρχείο, ώστε να μπορείτε να στέλνετε δεδομένα στην βάση μας. Για αυτό πρέπει να κατεβάσετε τον διακομιστή XAMPP και να ακολουθήσετε κάποια βήματα που θα αναλυθούν παρακάτω και να ενώσετε τα αρχεία .php με την βάση στο phpmyadmin παρακάτων.
+The first thing you need to do before you start browsing the site is to make the database work on the internet on localhost, not as a file, so that you can send data to our database. For this you need to download the XAMPP server and follow some steps explained below and join the .php files to the base in phpmyadmin by the way.
 
-## Πώς να συνδέσετε HTML μία βάση δεδομένων με MySQL χρησιμοποιώντας PHP, ώστε να αποθηκεύονται οι απαντήσεις που θα συμπληρώσει ο κάθε χρήστης στις φόρμες τις ιστοσελίδας; 
+## How to connect HTML a database to MySQL using PHP, so that the answers that each user fills in the forms on the website are stored? 
 
-Ο τρόπος που χρησιμοποιήσαμε είναι με τον διακομιστή XAMPP και έπειτα με χρήση της γλώσσας PHP.  
+The way we used is with the XAMPP server and then using the PHP language.  
 
-Ο XAMPP είναι ένας δημοφιλής διακομιστής web cross-platform που επιτρέπει στους προγραμματιστές να γράφουν και να ελέγχουν τον κώδικά τους σε έναν τοπικό διακομιστή ιστού.
+XAMPP is a popular cross-platform web server that allows developers to write and test their code on a local web server.
 
-Αρχικά πρέπει να εγκαταστήσουμε τον XAMPP από την ακόλουθη ιστοσελίδα. https://www.apachefriends.org/download.html . 
-Με αυτό το λογισμικό, θα αποκτήσουμε έναν τοπικό διακομιστή ιστού, π.χ. Apache, γλώσσα PHP και βάση δεδομένων MySQL. 
+First we need to install XAMPP from the following website. https://www.apachefriends.org/download.html . 
+With this software, we will get a local web server, e.g. Apache, PHP language and MySQL database. 
 
-Μετά την εγκατάσταση για να συνδέσετε την βάση δεδομένων μας από MySQL με το XAMPP, ακολουθείτε τα επόμενα βήματα:
+After installation to connect our database from MySQL to XAMPP, follow the next steps:
 
-* Ανοίξτε τον Πίνακα Ελέγχου XAMPP
-* Κάντε κλικ στο κουμπί Apache-Start
-* Kάντε κλικ στο κουμπί MySQL-Start
+* Open the XAMPP Control Panel
+* Click on the Apache-Start button
+* Click on the MySQL-Start button
 
-Έπειτα πρέπει να ελέγξετε ότι ο τοπικός υπολογιστής σας λειτουργεί ή όχι. Ανοίξτε το πρόγραμμα περιήγησής σας και ελέγξτε αυτό το URL http://127.0.0.1 ή http://localhost/ . Εάν αυτό λειτουργεί, σημαίνει ότι έχετε ενεργοποιήσει τον τοπικό διακομιστή ιστού με PHP/MySQL.
+Then you need to check that your local computer is working or not. Open your browser and check this URL http://127.0.0.1 or http://localhost/ . If it works, it means you have enabled your local web server with PHP/MySQL.
 
-Επίσης, το GUI PHPmyAdmin έρχεται για χειρισμό λειτουργιών CRUD, π.χ. εισαγωγή (δημιουργία), ενημέρωση, διαγραφή και επιλογή (ανάγνωση) εγγραφών από πίνακες. Αυτή η διεπαφή βασίζεται σε πρόγραμμα περιήγησης και είναι πολύ χρήσιμη, εύκολη στη χρήση για τη δημιουργία και τη διαχείριση της βάσης δεδομένων phpmyadmin σε πίνακα (στήλη, σειρά).
+Also, the PHPmyAdmin GUI comes for handling CRUD operations, e.g. inserting (creating), updating, deleting and selecting (reading) records from tables. This browser based interface is very useful, easy to use for creating and managing phpmyadmin database in table (column, row).
 
-Εάν έχετε την παραπάνω εγκατάσταση, μπορείτε να ξεκινήσετε την κωδικοποίηση.
+If you have the above setup, you can start coding.
 
-Ανοίξτε ένα πρόγραμμα περιήγησης ιστού (chrome, firefox, edge, κ.λπ., ) και πληκτρολογήστε αυτό το http://localhost/phpmyadmin/ ή το http://127.0.0.1/phpmyadmin/ για ανοιχτό GUI για τη διαχείριση DB στον υπολογιστή σας. Έπειτα:
+Open a web browser (chrome, firefox, edge, etc, ) and type this http://localhost/phpmyadmin/ or http://127.0.0.1/phpmyadmin/ for open GUI for DB management on your computer. Then:
 
-* Δημιουργήστε μία νέα βάση δεδομένων με όνομα shelterdb, στο πεδίο που γράφει Create Database
-* Έπειτα από τις βάσεις που αναγράφει αριστερά, επιλέξτε την βάση shelterdb
-* Μετά πατήστε το Κώδικα SQL που γράφει στα πάνω πεδία
-* Κάντε copy paste τον κώδικα που υπάρχει στο αρχείο shelterdb.sql που δίνετε στον φάκελο shelter
+* Create a new database named shelterdb, in the field that says Create Database
+* Then from the databases listed on the left, select the shelterdb database
+* Then click on the SQL Code it says in the fields above
+* Copy paste the code that is in the shelterdb.sql file that you give in the shelter folder
  
-Αφού το κάνετε αυτό είμαστε έτοιμοι να ξεκινήσετε. Μπείτε στο http://localhost/shelter/Website.html και θα είστε έτοιμη να χρησιμοποιήσετε πλήρως την ιστοσελίδα.  
+Once you have done this we are ready to get started. Go to http://localhost/shelter/Website.html and you will be ready to fully use the website.  
 
-Τα αποτελέσματα που γράφετε στην φόρμα τώρα θα συμπληρώνονται στον αντίστοιχο πίνακα της βάσης μας στο phpmyadmin. Για να δείτε τα αποτελέσματα για την φόρμα:
+The results you enter in the form will now be populated in the corresponding table in our database in phpmyadmin. To see the results for the form:
 
-* LOST PET FORM, μπέιτε στον πίνακα lost
-* FOUND PET FORM, μπέιτε στον πίνακα found
-* DONATION FORM, μπέιτε στον πίνακα donation
-* VOLUNTEER APPLICATION FORM, μπέιτε στον πίνακα nvolunteers
-* ADOPTION FORM, μπέιτε στον πίνακα nadopt
+* LOST PET FORM, browse to the lost table
+* FOUND PET FORM, browse to the found table.
+* DONATION FORM, browse to the donation table
+* VOLUNTEER APPLICATION FORM, enter the table nvolunteers
+* ADOPTION FORM, go to the nadopt table
 
 
-Για να κάνετε εξαγωγή στοιχείων απο το phpmyadmin πατήστε στην βάση μας και κάντε εξαγωγή. Αυτό θα δημιουργήσει ένα αρχείο .sql με όλα τα στοιχεία που προστέθηκαν τελευταία στην φόρμα.
+To export data from phpmyadmin click on our database and export. This will create a .sql file with all the data last added to the form.
 
-Για την ιστοσελίδα δημιουργήθηκαν νέοι πίνακες διαφορετικοί από αυτούς του 2ου παραδοτέου, οι οποίοι είναι ουσιαστικά κάποιοι προσωρινοί πίνακες που μπορεί ο καθένας να αναγράφει ότι θέλει (θα θέλαμε να πιστεύουμε ότι αυτά που αναγράφουν είναι αξιόπιστα, τέθηκαν κάποιοι περιορισμοί για να ελέγχετε η ορθότητα των στοιχείων που παραδίδονται, αλλά παρ'όλα αυτά επιλέχθηκε να γίνεται με αυτόν τον τρόπο για σιγουρία), αλλά μετά θα τα τσεκάρει κάποιος, εντός της φιλοζωικής ομάδας για να δει την εγκυρότητα των στοιχείων που αναγράφονται.  
-
+For the website new tables were created different to those in the 2nd deliverable, which are essentially some temporary tables that anyone can enter anything they want (we would like to think that what they enter is reliable, some restrictions were put in place to check the accuracy of the data being delivered, but it was still chosen to be done this way to be sure), but then it will be checked by someone, within the animal welfare team to see the validity of the data entered.  
